@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Balay Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<h1 id="colorlib-logo"><a href="index.html">Mia Pham</a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Experience</a></li>
+					<li><a href="about.html">Awards</a></li>
+					<li class="colorlib-active"><a href="work.html">Projects</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </small></p>
+				<ul>
+					<li><a href="https://join.skype.com/invite/cI4O1HqV9Uhv"><i class="icon-social-skype"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/minh-anh-pham-8abb42222"><i class="icon-linkedin2"></i></a></li>
+					<li><a href="https://github.com/minhanh151"><i class="icon-github"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main">
+
+			<div class="colorlib-about">
+				<div class="colorlib-narrow-content">
+					<div class="row row-bottom-padded-md">
+						<div class="col-12 col-lg-8">
+							<h2 class="colorlib-heading fadeInLeft animated">My Projects</h2>
+							<div class="animate-box fadeInLeft animated">
+								2. Oversample
+								<br>Sinh thêm số lượng nhãn 1
+								<br>2.1. SMOTE (Synthetic Minority Oversampling Technique)
+								<br>Recall cao nhưng precision rất thấp
+								<br>2.2. Generative Adversarial Networks
+								<br>4 mô hình GAN phổ biến:
+								<br>* GAN: The original (“vanilla”) GAN
+								<br>* CGAN: A conditional version of the original GAN that makes use of class labels * WGAN: The Wasserstein GAN (with gradient-penalty)
+								<br>* WCGAN: A conditional version of the Wasserstein GAN
+								<br>CGAN khác với GAN ở chỗ cần thêm 1 cột nhãn làm input đầu vào. nhãn này đc extract từ thuật toán phân cụm như Kmeans, .. tuy nhiên đa dữ liệu đều nằm trong cùng 1 cluster nên kết quả không khác gì nhiều so với GAN version.
+								<br>Dữ liệu nhãn 1 được sinh bằng cách chạy model GAN, hoặc WGAN. Sau khi cho thêm dữ liệu thêm ( khoảng 100000 records sinh từ WGAN) cho vào mô hình chạy tốt nhất là XGboost thì kết quả không được tăng lên đáng kể. Nếu sử dụng GAN thì thậm chí còn cho kết quả kém hơn.
+								<br>=> Dữ liệu sinh không được khớp so với dữ liệu nhãn 1 ban đầu, khiến mô hình không học được gì thêm và còn có thể gây ra nhiễu tới mô hình
+								<br>Confusion matrix của Xgboost khi train với dữ liệu sinh từ WGAN
+								
+							</div>
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">History</h2>
+							<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+						</div>
+						<div class="col-md-8 animate-box" data-animate-effect="fadeInRight">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Why choose me?
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-6">
+										      			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+										      		</div>
+										      	</div>
+									         </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What I do?
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+													<ul>
+														<li>Separated they live in Bookmarksgrove right</li>
+														<li>Separated they live in Bookmarksgrove right</li>
+													</ul>
+									        </div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>  -->
+				</div>
+			</div>
+			
+			
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<!-- <div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-skyline"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="1539" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-engineer"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="3653" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Employees</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-architect-with-helmet"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="5987" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Constructor</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-worker"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="3999" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Partners</span>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div id="get-in-touch" class="colorlib-bg-color">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<h2>Get in Touch!</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<p class="colorlib-lead">This website showcases my research interest, past and current work, and experiences.</p>
+							<p><a href="contact.html" class="btn btn-primary btn-learn">Contact me!</a></p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Sticky Kit -->
+	<script src="js/sticky-kit.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
