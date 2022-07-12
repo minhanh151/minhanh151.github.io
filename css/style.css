@@ -412,6 +412,7 @@ body.offcanvas {
       padding-bottom: 8em; } }
 
 .about-img,
+.project-img,
 .about-img-2,
 .services-img {
   background-size: cover;
@@ -1275,6 +1276,7 @@ body.offcanvas {
 
 
 
+    
 
 
 .col-12 {
@@ -1622,12 +1624,6 @@ h4, .h4 {
   padding-left: 15px;
 } */
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
 
 .text-center {
   text-align: center!important;
@@ -1718,4 +1714,47 @@ h4, .h4 {
 
 
 
+
+.heading-text h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.subtitle-text {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+.elementor-127 .elementor-element.elementor-element-a454fc3 iframe {
+  height: 228px;
+}
+.elementor-widget-google_maps iframe {
+  height: 300px;
+}
+.elementor embed, .elementor iframe, .elementor object, .elementor video {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+  border: none;
+}
+
+
+.project-img {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 30px;
+}
 
