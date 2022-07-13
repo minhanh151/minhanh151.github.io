@@ -1751,6 +1751,17 @@ h4, .h4 {
   border: none;
 }
 
+.project-img-5,
+.project-img-6,
+.project-img-7,
+.project-img-4 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .project-img {
   width: 100%;
@@ -1758,3 +1769,29 @@ h4, .h4 {
   margin-bottom: 30px;
 }
 
+.project-img-4 {
+  width: 100%;
+  height:170px;
+  margin-bottom: 30px;
+  background-size: 1000px 170px;
+}
+
+.project-img-5 {
+  width: 100%;
+  height:500px;
+  margin-bottom: 30px;
+  background-size: 600px 500px;
+}
+
+.project-img-6 {
+  width: 100%;
+  height:300px;
+  margin-bottom: 30px;
+  background-size: 900px 300px;
+}
+.project-img-7 {
+  width: 100%;
+  height:450px;
+  margin-bottom: 30px;
+  background-size: 900px 450px;
+}

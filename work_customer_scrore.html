@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Mia Pham - Personal Page</title>
@@ -9,12 +10,12 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
@@ -24,7 +25,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -48,8 +49,9 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-	<body>
+</head>
+
+<body>
 	<div id="colorlib-page">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
@@ -66,12 +68,16 @@
 			</nav>
 
 			<div class="colorlib-footer">
-				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </small></p>
+				<p><small>&copy;
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</small></p>
 				<ul>
 					<li><a href="https://join.skype.com/invite/cI4O1HqV9Uhv"><i class="icon-social-skype"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/minh-anh-pham-8abb42222"><i class="icon-linkedin2"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/minh-anh-pham-8abb42222"><i class="icon-linkedin2"></i></a>
+					</li>
 					<li><a href="https://github.com/minhanh151"><i class="icon-github"></i></a></li>
 				</ul>
 			</div>
@@ -90,11 +96,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<h3>1. CUSTOMER SCORE MODEL</h3>
 								</div>
 								<p>The model will score accounts on a scale of 1000 and classify accounts according to
-									thresholds of high risk, medium risk, and low risk are equivalent to the probability that
+									thresholds of high risk, medium risk, and low risk are equivalent to the probability
+									that
 									virtual account of the business/point of sale. The input data expected to use:</p>
 								<ul>
 									<li>Frequency and average value of topup transactions</li>
-									<li>Frequency and average value of electricity/water bill payment transactions in a month.</li>
+									<li>Frequency and average value of electricity/water bill payment transactions in a
+										month.</li>
 									<li>Frequency and average value of TV bill transactions in the month.</li>
 									<li>Frequency and average value of loan transactions during the month.</li>
 									<li>Number of different transaction types used</li>
@@ -102,45 +110,76 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 										added during model building.</li>
 								</ul>
 								<p>The model will analyze to determine which data is important, and then combine a
-									number of machine learning algorithms to divide the interval, put a weight on each input data. Score of
+									number of machine learning algorithms to divide the interval, put a weight on each
+									input data. Score of
 									customer will be a weighted composite score from the input data points.</p>
 								<div class="heading-text">
 									<h3>2. UNDERSAMPLE & OVERSAMPLE MODEL</h3>
 								</div>
 								<p class="subtitle-text">a. UNDERSAMPLE</p>
-								<p>Take sample 1 amount of data label 0, the set of users with label 0 are those who have generated vtp transactions in June. Specifically, the label distribution ratio of the data is as follows</p>
+								<p>Take sample 1 amount of data label 0, the set of users with label 0 are those who
+									have generated vtp transactions in June. Specifically, the label distribution ratio
+									of the data is as follows</p>
 								<ul>
 									<li>Fraud class: 8789 (0.81%)</li>
 									<li>No fraud class: 1076448 (99.19%)</li>
 								</ul>
 								<div class="col-md-12">
-									<div class="project-img animate-box" data-animate-effect="fadeInLeft" style="background-image: url(images/img_undersample.jpg);">
+									<div class="project-img animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_undersample.jpg);">
 									</div>
 								</div>
+								<p>With this method, the current Xgboost model has the best results in terms of
+									indicators
+									With the Oversample method, label 1 data is generated by running the model GAN, WGAN
+									or SMOTE, but the results are not significantly improved, even WGAN and SMOTE are
+									worse.</p>
 								<div class="col-md-12">
-									<div class="project-img animate-box" data-animate-effect="fadeInLeft" style="background-image: url(images/img_01_02.jpg);">
+									<div class="project-img animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_01_02.jpg);">
 									</div>
 								</div>
 								<p class="subtitle-text">b. OVERSAMPLE</p>
-								<p>b.1. SMOTE (Synthetic Minority Oversampling Technique) - Recall is high but precision is very low</p>
-								
+								<p>b.1. SMOTE (Synthetic Minority Oversampling Technique) - Recall is high but precision
+									is very low</p>
+
 								<p>b.2. Generative Adversarial Networks</p>
 								<ul>
 									<li>GAN: The original (“vanilla”) GAN</li>
-									<li>CGAN: A conditional version of the original GAN that makes use of class labels</li>
+									<li>CGAN: A conditional version of the original GAN that makes use of class labels
+									</li>
 									<li>WGAN: The Wasserstein GAN (with gradient-penalty)</li>
 									<LI>WCGAN: A conditional version of the Wasserstein GAN</LI>
 								</ul>
-								<P>CGAN differs from GAN in that it requires an additional column of labels as input. This label is extracted from a clustering algorithm like Kmeans, .. but the data is in the same cluster, so the result is not much different from the GAN version.</P>
-									<P>Label 1 data is generated by running the GAN model, or WGAN. After adding more data (about 100000 records generated from WGAN) for the best running model, XGboost, the results were not significantly increased. Using GAN gives even worse results.</P>
-									<p>=> The generated data is not matched with the original label 1 data, causing the model to learn nothing more and possibly causing noise to the model.
+								<P>CGAN differs from GAN in that it requires an additional column of labels as input.
+									This label is extracted from a clustering algorithm like Kmeans, .. but the data is
+									in the same cluster, so the result is not much different from the GAN version.</P>
+								<P>Label 1 data is generated by running the GAN model, or WGAN. After adding more data
+									(about 100000 records generated from WGAN) for the best running model, XGboost, the
+									results were not significantly increased. Using GAN gives even worse results.</P>
+								<p>=> The generated data is not matched with the original label 1 data, causing the
+									model to learn nothing more and possibly causing noise to the model.
 									Confusion matrix of Xgboost when training with data generated from WGAN</P>
-									<div class="col-md-12">
-										<div class="project-img animate-box" data-animate-effect="fadeInLeft" style="background-image: url(images/img_01_03.jpg);">
-										</div>
+								<div class="col-md-12">
+									<div class="project-img animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_01_03.jpg);">
 									</div>
-
-
+								</div>
+								<div class="heading-text">
+									<h3>3. Use lightgbm to evaluate features</h3>
+								</div>
+								<p>The figure below shows the contribution of each feature compared to each feature that generates the score output of the model of a cheat money subscriber. The base value is the average score of all samples. The value of not using sms_banking and account_age contributes a lot in detecting fraudulent subscribers.</p>
+								<div class="col-md-12">
+									<div class="project-img-4 animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_01_04.jpg);">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="project-img-5 animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_01_05.jpg);">
+									</div>
+								</div>
+								<p>Account age (account_age) has the biggest impact on the model. After training with lightgbm with only this feature, the model got auc ~ 0.92. The distribution of value between the two labels of this feature is very different, most of the accounts that violate electricity bills are newly created accounts.</p>
 							</div>
 						</div>
 					</div>
@@ -195,9 +234,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					</div>  -->
 				</div>
 			</div>
-			
-			
-			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+
+
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);"
+				data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
 				<div class="colorlib-narrow-content">
 					<div class="row">
@@ -235,11 +275,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<p class="colorlib-lead">This website showcases my research interest, past and current work, and experiences.</p>
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+							data-animate-effect="fadeInLeft">
+							<p class="colorlib-lead">This website showcases my research interest, past and current work,
+								and experiences.</p>
 							<p><a href="contact.html" class="btn btn-primary btn-learn">Contact me!</a></p>
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
@@ -262,11 +304,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
-	
-	
+
+
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
-	</body>
-</html>
+</body>
 
+</html>
