@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mia Pham - Personal Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<h1 id="colorlib-logo"><a href="index.html">Mia Pham</a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="work.html">Research Experience</a></li>
+					<li><a href="services.html">Work Experience</a></li>
+					<li><a href="about.html">Awards</a></li>
+					<li class="colorlib-active"><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<p><small>&copy;
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</small></p>
+				<ul>
+					<li><a href="https://join.skype.com/invite/cI4O1HqV9Uhv"><i class="icon-social-skype"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/minh-anh-pham-8abb42222"><i class="icon-linkedin2"></i></a>
+					</li>
+					<li><a href="https://github.com/minhanh151"><i class="icon-github"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main">
+
+			<div class="colorlib-about">
+				<div class="colorlib-narrow-content">
+					<div class="row row-bottom-padded-md">
+						<div class="col-12 col-lg-12">
+							<h2 class="colorlib-heading fadeInLeft animated">CREDIT SCORE</h2>
+							<div class="animate-box fadeInLeft animated">
+								
+								<p>Currently, the credit score problem has two datasets: Set V01, including users with
+									label 0 is the High label of TS, and V1 is a set of 600K labels of 0 including 200K
+									Low, 200K Medium and 200K High labels of TS. In addition, there are 54K users with
+									bad debt, which will be used to uniformly blend into both sets to ensure an even
+									distribution of bad labels.</p>
+								<p>The question is which set should be taken out to train the model. Comparing 2 volumes
+									V01 and V1 when removing label 1, have the following characteristics: Volume V01 has
+									a more standard label than V1 (because in fact, after visualize, there are some L
+									labels of V1 that belong to the bad debt group, label H. This does not happen at
+									all. This means that the label H of TS as label 0 will have higher confidence).
+									However, the set V1 has a distribution closer to the actual distribution of the
+									dataset, because our dataset includes not only users with label 1 with High score as
+									in V01, but also labels with M, L. Choosing 1 in Two sets V01 or V1 make training
+									sets, so they have the following characteristics:</p>
+								<ul>
+									<li>1. If V01 is selected, the label is more standard, but the distribution of the
+										dataset is much different from the real distribution, so theoretically, the
+										results will be much down on the back test set.</li>
+									<li>2. If V1, a non-standard label is selected, it can be dangerous that the model
+										will have the RECALL index completely down, because many bad labels are
+										classified as good. However, the results on the back test set may not be down
+										much</li>
+									<li>Frequency and average value of TV bill transactions in the month.</li>
+									<li>Frequency and average value of loan transactions during the month.</li>
+									<li>Number of different transaction types used</li>
+									<li>Behavioral data on telecommunications, Viettelpay Pro, Appsflyer can be added
+										added during model building.</li>
+								</ul>
+								<p>If we choose V01 as the train set, and predict on the set V01, then the result on V01
+									is quite reliable, because the distribution of this set V01 is closer to the real
+									distribution of the whole dataset. After mixing well according to the ratio of bad
+									labels on both sets V1 and V01, the train model on V01 gives the following results:
+								</p>
+
+								<div class="col-md-12">
+									<div class="project-img-6 animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_02_01.png);">
+									</div>
+								</div>
+								<p>Train result, test on V01, gini result down because label 1 is rarer, due to
+									subdivision to set V1 for testing
+									<br>Model results, predict on set V1, gini doesn't down too much
+								</p>
+								<p>If we delete all attributes with more than 1 month of inactive, we get the following
+									results:</p>
+								<div class="col-md-12">
+									<div class="project-img-7 animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_02_02.png);">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="project-img-7 animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_02_03.png);">
+									</div>
+								</div>
+								<p>Figure 3 trains on the set V1, the first test is the test set on V1, the last test is
+									the set V01. Bad labels are uniformly divided among episodes
+									<br>Note, the down results are also partly due to too few labels 1 in the training
+									set, with a rate of about 2% label 1 in the training set.
+								</p>
+								<p>If we train on V01, we get the result:</p>
+								<div class="col-md-12">
+									<div class="project-img-7 animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_02_04.png);">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="project-img-7 animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_02_05.png);">
+									</div>
+								</div>
+								<p>Train on V01, TEST is the set spit from V01, extra test is episode V1</p>
+
+								<p>Deleting users with many months of inactive months results in a drop, which is
+									understandable because bad debt users have a higher inactive rate than good debt
+									users. However, this is advisable, because it is not advisable to predict users with
+									too few observations. In addition, deleting these users also helps the model not to
+									put too much weight on the null property, so many other more meaningful behaviors
+									will be detected and included in the model, from which the model will classify well.
+									than.</p>
+								<p>In both models, training on the set V01 or training on V1, the accuracy on the test
+									set extracted from V01 is always better than the test set extracted from V1. This is
+									quite reasonable since the set V1 has a more complex distribution, the separation
+									between the two types of labels is quite small. The result on the test set extracted
+									from V1 is 0.638 if train on V01 and 0.674 if train on V1. The interesting thing is
+									that even when training on set V1, the accuracy on the test extracted from this set
+									is smaller than the accuracy on set V01, which proves that the model is quite stable
+									and performs quite well on datasets with different distributions.</p>
+								<p>Proposals:</p>
+								<ul>
+									<li>Get the results on the test set extracted from V1 as the results for the reportss</li>
+									<li>Need to get more Recall score is another indicator to evaluate the model, instead of just observing the gini index. In the problem under consideration, mistakenly guessing label 1 to 0 (Faux negative) is much more dangerous than guessing wrong label 0 to 1 (Faux Positive). In terms of the Recall index, the model in Figure 4 is much better than the model in Figure 3 (although the Gini index has the opposite result).</li>
+									<li>Considering the set of users with the number of inactive months greater than 1, there are 35% of bad debts, while the distribution of bad debts in general is only 1.85%. The distribution is as follows:</li>
+									<div class="col-md-12">
+										<div class="project-img-6 animate-box" data-animate-effect="fadeInLeft"
+											style="background-image: url(images/img_02_06.png);">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="project-img-6 animate-box" data-animate-effect="fadeInLeft"
+											style="background-image: url(images/img_02_07.png);">
+										</div>
+									</div>
+									<p>Figure 6 Cases of bad debt are usually either inactive, or active a number of months later inactive, the ability to avoid debt.s</p>
+								</ul>
+								<p>What is the relationship between high inactive months and bad debt?</p>
+								<ul>
+									<li>There is a high probability that the bad debt affects active month, and not vice versa, because before bad debt, the user still uses that phone number normally, so there will be a low number of inactive months. However, when bad debt occurs, this user also gives up this phone number to avoid debt, leading to an increase in the number of inactive months observed afterwards.</li>
+									<li>In fact, this factor needs to be removed from the model, because it only happens after the time of predict. Therefore, it is necessary to remove all users that have inactive>=1. This removal will certainly bring down the results of the model, but is necessary to prevent data leakage.s</li>
+									<li>Hypothesis: User's Bihavior before and after bad debt occurs is different. So, ideally, the data should be obtained before the bad debt occurs (even before the loan is taken, if possible). It is very likely that this model will give poor test set and back test results, but it is highly likely that it will perform better in practice, compared to current models.</li>
+									<li>However, it is still recommended to keep this feat to predict MB's back test result, because this feat still predicts bad debt good when bad debt event has occurred (and this is the case back test MB, and not is the case for lending decisions).</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">History</h2>
+							<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+						</div>
+						<div class="col-md-8 animate-box" data-animate-effect="fadeInRight">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Why choose me?
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-6">
+										      			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+										      		</div>
+										      	</div>
+									         </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What I do?
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+													<ul>
+														<li>Separated they live in Bookmarksgrove right</li>
+														<li>Separated they live in Bookmarksgrove right</li>
+													</ul>
+									        </div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>  -->
+				</div>
+			</div>
+
+
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);"
+				data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<!-- <div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-skyline"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="1539" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-engineer"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="3653" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Employees</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-architect-with-helmet"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="5987" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Constructor</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-worker"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="3999" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Partners</span>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div id="get-in-touch" class="colorlib-bg-color">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<h2>Get in Touch!</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+							data-animate-effect="fadeInLeft">
+							<p class="colorlib-lead">This website showcases my research interest, past and current work,
+								and experiences.</p>
+							<p><a href="contact.html" class="btn btn-primary btn-learn">Contact me!</a></p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Sticky Kit -->
+	<script src="js/sticky-kit.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

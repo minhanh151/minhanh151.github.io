@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mia Pham - Personal Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<h1 id="colorlib-logo"><a href="index.html">Mia Pham</a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="colorlib-active"><a href="work.html">Research Experience</a></li>
+					<li><a href="services.html">Work Experience</a></li>
+					<li><a href="about.html">Awards</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<p><small>&copy;
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</small></p>
+				<ul>
+					<li><a href="https://join.skype.com/invite/cI4O1HqV9Uhv"><i class="icon-social-skype"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/minh-anh-pham-8abb42222"><i class="icon-linkedin2"></i></a>
+					</li>
+					<li><a href="https://github.com/minhanh151"><i class="icon-github"></i></a></li>
+				</ul>
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main">
+
+			<div class="colorlib-about">
+				<div class="colorlib-narrow-content">
+					<div class="row row-bottom-padded-md">
+						<div class="col-12 col-lg-12">
+							<h2 class="colorlib-heading fadeInLeft animated">CUSTOMER SCORE</h2>
+							<div class="animate-box fadeInLeft animated">
+								<div class="heading-text">
+									<h3>1. CUSTOMER SCORE MODEL</h3>
+								</div>
+								<p>The model will score accounts on a scale of 1000 and classify accounts according to
+									thresholds of high risk, medium risk, and low risk are equivalent to the probability
+									that
+									virtual account of the business/point of sale. The input data expected to use:</p>
+								<ul>
+									<li>Frequency and average value of topup transactions</li>
+									<li>Frequency and average value of electricity/water bill payment transactions in a
+										month.</li>
+									<li>Frequency and average value of TV bill transactions in the month.</li>
+									<li>Frequency and average value of loan transactions during the month.</li>
+									<li>Number of different transaction types used</li>
+									<li>Behavioral data on telecommunications, Viettelpay Pro, Appsflyer can be added
+										added during model building.</li>
+								</ul>
+								<p>The model will analyze to determine which data is important, and then combine a
+									number of machine learning algorithms to divide the interval, put a weight on each
+									input data. Score of
+									customer will be a weighted composite score from the input data points.</p>
+								<div class="heading-text">
+									<h3>2. UNDERSAMPLE & OVERSAMPLE MODEL</h3>
+								</div>
+								<p class="subtitle-text">a. UNDERSAMPLE</p>
+								<p>Take sample 1 amount of data label 0, the set of users with label 0 are those who
+									have generated vtp transactions in June. Specifically, the label distribution ratio
+									of the data is as follows</p>
+								<ul>
+									<li>Fraud class: 8789 (0.81%)</li>
+									<li>No fraud class: 1076448 (99.19%)</li>
+								</ul>
+								<div class="col-md-12">
+									<div class="project-img animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_undersample.jpg);">
+									</div>
+								</div>
+								<p>With this method, the current Xgboost model has the best results in terms of
+									indicators
+									With the Oversample method, label 1 data is generated by running the model GAN, WGAN
+									or SMOTE, but the results are not significantly improved, even WGAN and SMOTE are
+									worse.</p>
+								<div class="col-md-12">
+									<div class="project-img animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_01_02.jpg);">
+									</div>
+								</div>
+								<p class="subtitle-text">b. OVERSAMPLE</p>
+								<p>b.1. SMOTE (Synthetic Minority Oversampling Technique) - Recall is high but precision
+									is very low</p>
+
+								<p>b.2. Generative Adversarial Networks</p>
+								<ul>
+									<li>GAN: The original (“vanilla”) GAN</li>
+									<li>CGAN: A conditional version of the original GAN that makes use of class labels
+									</li>
+									<li>WGAN: The Wasserstein GAN (with gradient-penalty)</li>
+									<LI>WCGAN: A conditional version of the Wasserstein GAN</LI>
+								</ul>
+								<P>CGAN differs from GAN in that it requires an additional column of labels as input.
+									This label is extracted from a clustering algorithm like Kmeans, .. but the data is
+									in the same cluster, so the result is not much different from the GAN version.</P>
+								<P>Label 1 data is generated by running the GAN model, or WGAN. After adding more data
+									(about 100000 records generated from WGAN) for the best running model, XGboost, the
+									results were not significantly increased. Using GAN gives even worse results.</P>
+								<p>=> The generated data is not matched with the original label 1 data, causing the
+									model to learn nothing more and possibly causing noise to the model.
+									Confusion matrix of Xgboost when training with data generated from WGAN</P>
+								<div class="col-md-12">
+									<div class="project-img animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_01_03.jpg);">
+									</div>
+								</div>
+								<div class="heading-text">
+									<h3>3. Use lightgbm to evaluate features</h3>
+								</div>
+								<p>The figure below shows the contribution of each feature compared to each feature that generates the score output of the model of a cheat money subscriber. The base value is the average score of all samples. The value of not using sms_banking and account_age contributes a lot in detecting fraudulent subscribers.</p>
+								<div class="col-md-12">
+									<div class="project-img-4 animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_01_04.jpg);">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="project-img-5 animate-box" data-animate-effect="fadeInLeft"
+										style="background-image: url(images/img_01_05.jpg);">
+									</div>
+								</div>
+								<p>Account age (account_age) has the biggest impact on the model. After training with lightgbm with only this feature, the model got auc ~ 0.92. The distribution of value between the two labels of this feature is very different, most of the accounts that violate electricity bills are newly created accounts.</p>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading">History</h2>
+							<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+						</div>
+						<div class="col-md-8 animate-box" data-animate-effect="fadeInRight">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Why choose me?
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-6">
+										      			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+										      		</div>
+										      	</div>
+									         </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What I do?
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+													<ul>
+														<li>Separated they live in Bookmarksgrove right</li>
+														<li>Separated they live in Bookmarksgrove right</li>
+													</ul>
+									        </div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>  -->
+				</div>
+			</div>
+
+
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);"
+				data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<!-- <div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-skyline"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="1539" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-engineer"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="3653" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Employees</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-architect-with-helmet"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="5987" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Constructor</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="icon"><i class="flaticon-worker"></i></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="3999" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Partners</span>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div id="get-in-touch" class="colorlib-bg-color">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<h2>Get in Touch!</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+							data-animate-effect="fadeInLeft">
+							<p class="colorlib-lead">This website showcases my research interest, past and current work,
+								and experiences.</p>
+							<p><a href="contact.html" class="btn btn-primary btn-learn">Contact me!</a></p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Sticky Kit -->
+	<script src="js/sticky-kit.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
